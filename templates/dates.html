@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block body %}
+
+<table>
+  <tr>
+    <th>Expiration Dates</th>
+  </tr>
+  {% for obj in dates %}
+    <tr>
+      <td><button type="button" class="btn btn-link">{{ obj }}</button></td>
+    </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}
